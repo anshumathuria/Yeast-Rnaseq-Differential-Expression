@@ -30,7 +30,7 @@ Gene Quantification
           │
           ▼
 Differential Expression Analysis
-(DESeq2)
+(edgeR)
           │
           ▼
 Visualization
@@ -45,8 +45,6 @@ Visualization
 RNAseq-Analysis/
 │
 ├── README.md
-├── LICENSE
-├── .gitignore
 │
 ├── data/
 │   ├── raw/
@@ -76,7 +74,7 @@ RNAseq-Analysis/
 | ------------- | ------------------------------------------ |
 | FastQC        | Quality assessment of raw sequencing reads |
 | featureCounts | Gene expression quantification             |
-| DESeq2        | Differential gene expression analysis      |
+| edgeR         | Differential gene expression analysis      |
 | R             | Statistical analysis and visualization     |
 | Bash          | Pipeline automation                        |
 
@@ -86,7 +84,7 @@ RNAseq-Analysis/
 
 The pipeline requires:
 
-* Paired-end RNA-seq FASTQ files
+* Replicate RNA-seq FASTQ files
 * Reference genome (FASTA)
 * Gene annotation (GTF/GFF)
 
